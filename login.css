@@ -1,0 +1,229 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("../image/1stimage.jpg") no-repeat center center/cover;
+    color: #f8f3e9;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #1a1412b5;
+    padding: 10px 20px;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #c09d74;
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: #c09d74;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100% - 100px);
+    padding: 20px;
+}
+
+/* Form Container */
+.form-container {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 50px 50px;
+    border-radius: 45px;
+    color: #f8f3e9;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    max-width: 800px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Input Styling */
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    height: 34px;
+    background-color: #fff;
+}
+
+.password-container {
+    position: relative;
+}
+
+/* .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+} */
+
+/* Buttons */
+.btn-primary {
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #84450eff;
+    border: none;
+    border-radius: 6px;
+    color: #f1efec;
+}
+
+.btn-primary:hover {
+    background-color: #84450eff;
+    color: #f8f3e9;
+}
+
+/* Messages */
+.server-message {
+    background: #8b0000;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Footer */
+.form-footer {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-footer a {
+    color: #c09d74;
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+    background: #1a1412b5;
+    color: #c09d74;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Disabled states */
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+.nav-links a.disabled,
+.form-footer a.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.toggle-password-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.toggle-password-btn i {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+.toggle-password-btn:focus {
+    outline: 1px solid #744107ff;
+}
+
+
+
+    /* Remove default show password icon  */
+    /* Hide default password reveal in Edge */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none !important;
+}
+
+    /* Hide default password reveal in Chrome/Safari */
+input[type="password"]::-webkit-textfield-decoration-container,
+input[type="password"]::-webkit-credentials-auto-fill-button {
+    display: none !important;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+    .span {
+        color: red;
+    }
+
+    /* Remove default show password icon */
+    .form-control.is-valid,
+    .was-validated .form-control:valid {
+        background-image: none !important;
+        padding-right: .75rem !important;
+        /* optional: remove extra space */
+    }
